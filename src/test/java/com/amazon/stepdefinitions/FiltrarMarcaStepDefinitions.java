@@ -16,9 +16,9 @@ public class FiltrarMarcaStepDefinitions {
                 BuscarItem.conFiltroMarca(item)
         );
     }
+
     @Entonces("el primer producto de la busqueda deberia ser de marca samsung")
     public void validarFiltroMarca() {
-
         OnStage.theActorInTheSpotlight().attemptsTo(
                 Ensure.that(ITEM_FILTRO_MARCA).text().contains("SAMSUNG")
         );

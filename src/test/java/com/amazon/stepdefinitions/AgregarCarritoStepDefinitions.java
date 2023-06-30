@@ -33,8 +33,8 @@ public class AgregarCarritoStepDefinitions {
     @Cuando("{actor} agrega al carrito los items")
     public void agregarVariosItemsCarrito(Actor actor, io.cucumber.datatable.DataTable dataTable) {
         actor.attemptsTo(Open.url("https://www.amazon.com"));
-        dataTable.asList().stream().forEach( item -> {
-                    actor.attemptsTo(BuscarItem.conEnvioColombia(item));
+        dataTable.asList().stream().forEach(item -> {
+            actor.attemptsTo(BuscarItem.conEnvioColombia(item));
         });
     }
 }

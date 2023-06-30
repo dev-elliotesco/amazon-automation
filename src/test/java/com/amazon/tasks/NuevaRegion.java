@@ -10,7 +10,7 @@ import static com.amazon.page.RegionPage.*;
 
 public class NuevaRegion {
 
-    public static Performable canada(){
+    public static Performable canada() {
         return Task.where("cambiar region a canada",
                 Click.on(BTN_BARRA_NAVEGACION),
                 Click.on(BTN_BARRA_REGION),
@@ -18,5 +18,7 @@ public class NuevaRegion {
                 Click.on(REGION),
                 Click.on(BTN_REGION_NUEVA)
         );
-    };
+    }
+
+    ;
 }

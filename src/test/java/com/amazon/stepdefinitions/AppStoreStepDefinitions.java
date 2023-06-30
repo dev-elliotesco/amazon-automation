@@ -17,6 +17,7 @@ public class AppStoreStepDefinitions {
         );
 
     }
+
     @Entonces("podria ver la la pagina de app store de amazon")
     public void verAppStore() {
         OnStage.theActorInTheSpotlight().attemptsTo(

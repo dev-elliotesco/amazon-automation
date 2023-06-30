@@ -16,6 +16,7 @@ public class BuscarLibroTituloStepDefinitions {
                 BuscarItem.conCategoriaLibro(titulo)
         );
     }
+
     @Entonces("el primer libro deberia contener el titulo {string}")
     public void validarTitulo(String titulo) {
         OnStage.theActorInTheSpotlight().attemptsTo(

@@ -16,11 +16,11 @@ public class FiltrarPrecioStepDefinitions {
         OnStage.theActorCalled("comprador").attemptsTo(
                 Open.url("https://www.amazon.com"));
     }
+
     @Cuando("busco {string} y filtro los precios de la busqueda entre  {int} y {int}")
     public void buscarFiltrarPrecio(String item, Integer valorMinimo, Integer valorMaximo) {
-
         OnStage.theActorInTheSpotlight().attemptsTo(
-                BuscarItem.conFiltroPrecio(item,valorMinimo,valorMaximo)
+                BuscarItem.conFiltroPrecio(item, valorMinimo, valorMaximo)
         );
     }
 
